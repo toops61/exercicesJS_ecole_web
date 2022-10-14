@@ -34,6 +34,10 @@ article3.createArticleDom();
 
 document.querySelector('section').addEventListener('click', e => selectArticle(e));
 
+//first one visible
+document.querySelector('.onglet').classList.add('selected');
+document.querySelector('.article').classList.add('visible');
+
 function selectArticle(e) {
     if (e.target.className === 'onglet' || e.target.className === 'onglet selected' || e.srcElement.localName === 'h2') {
         let ind = 0;

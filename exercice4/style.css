@@ -44,21 +44,23 @@ section {
 }
 
 .articles {
+    position: relative;
     padding: 1em;
     border-top: solid 1px;
+    min-height: 12em;
 }
 
 .article {
-    display: none;
-    min-height: 12em;
+    position: absolute;
+    opacity: 0;
     font-size: 1.3em;
 }
 
 .article h3 {
     margin: .5em 0;
-
 }
 
 .visible {
-    display: block;
+    transition: .8s;
+    opacity: 1;
 }
