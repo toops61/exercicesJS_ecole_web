@@ -1,0 +1,92 @@
+* {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 4em;
+    background-color: rgb(4, 144, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bignav {
+    height: fit-content;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+/*     width: 100%;
+    background-color: rgb(4, 144, 159); */
+}
+
+li {
+    margin: .5em 1em;
+    font-size: 1.5em;
+}
+
+button {
+    z-index: 99;
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    display: none;
+    padding: .5em 1em;
+    border-radius: 1em;
+    background-color: rgb(138, 22, 5);
+}
+
+.menuBar {
+    width: 1.7em;
+    height: 2px;
+    margin: 1px 0;
+    background-color: #fff;
+}
+
+.portrait button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portrait ul {
+    transform: translateY(-5em);
+    opacity: 0;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.portrait .visible {
+    transform: translateY(0);
+    transition: .8s;
+    opacity: 1;
+}
+
+/* @media screen and (max-width:400px) {
+    @content;
+} */
