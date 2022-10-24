@@ -391,4 +391,9 @@ funcTest().then(text => console.log(text));
     document.querySelector('.main-section').innerHTML += `<div class='nasa-video'><video src="${img.href}" autoplay loop controls></div>`;
 })(); */
 
-/// PAGE2
+//chainage optionnel :
+const adventurer = {
+    name: 'machin'
+}
+const dogName = adventurer.dog?.name;
+console.log(dogName);
